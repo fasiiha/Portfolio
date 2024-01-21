@@ -1,27 +1,39 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
 import menu from "../../assets/menu.png";
-import ContactImg from "../../assets/contact.png";
+// import ContactImg from "../../assets/contact.png";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <>
       <nav className="navbar">
-        <img src={logo} alt="logo" className="logo" />
-        <div className="menu">
+        <div className="leftLink">
           <Link
             activeClass="active"
             to="home"
             smooth={true}
             offset={-100}
             duration={500}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="menuListItem"
           >
-            Home
+            {isHovered ? "fasiha arshad" : "code by fasiha"}
           </Link>
+        </div>
+
+        <div className="menu">
           <Link
             activeClass="active"
             to="project"
@@ -53,21 +65,17 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        <button
-        
-          className="menuBtn"
-          onClick={() => {
-            document.querySelector('.contact')
-              .scrollIntoView({ behavior: 'smooth' });
-          }}
+
+        <img
+          src={menu}
+          alt="Menu"
+          className="mobMenu"
+          onClick={() => setShowMenu(!showMenu)}
+        />
+        <div
+          className="mobnavMenu"
+          style={{ display: showMenu ? "flex" : "none" }}
         >
-          <img src={ContactImg} alt="contactimg" className="menuImg" />
-          Contact Me
-        </button>
-
-
-        <img src={menu} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)} />
-        <div className="mobnavMenu" style={{display: showMenu? 'flex':'none'}}>
           <Link
             activeClass="active"
             to="home"
@@ -75,7 +83,7 @@ function Navbar() {
             offset={-100}
             duration={500}
             className="mobListItem"
-            onClick={()=>setShowMenu(false)}
+            onClick={() => setShowMenu(false)}
           >
             Home
           </Link>
@@ -86,7 +94,7 @@ function Navbar() {
             offset={-100}
             duration={500}
             className="mobListItem"
-            onClick={()=>setShowMenu(false)}
+            onClick={() => setShowMenu(false)}
           >
             Projects
           </Link>
@@ -97,7 +105,7 @@ function Navbar() {
             offset={-100}
             duration={500}
             className="mobListItem"
-            onClick={()=>setShowMenu(false)}
+            onClick={() => setShowMenu(false)}
           >
             Skills
           </Link>
@@ -108,7 +116,7 @@ function Navbar() {
             offset={-100}
             duration={500}
             className="mobListItem"
-            onClick={()=>setShowMenu(false)}
+            onClick={() => setShowMenu(false)}
           >
             Contact
           </Link>
