@@ -29,18 +29,43 @@ function Contact() {
   return (
     <>
       <section className="contact">
-        <h1 className="title">Contact Me</h1>
-        <span className="description">nne,wmenw,e</span>
+        <div className="Contitle">Let{"'"}s start a project together</div>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <input type="text" className="name" placeholder="Name" name="your_name"/>
-          <input type="text" className="email" placeholder="Email" name="your_email" />
+          <h5>What{"'"}s your name?</h5>
+          <input
+            type="text"
+            className="name"
+            placeholder="Full Name"
+            name="your_name"
+          />
+
+          <h5>What{"'"}s your email?</h5>
+          <input
+            type="text"
+            className="email"
+            placeholder="example@mail.com"
+            name="your_email"
+          />
+
+          <h5>What{"'"}s the name of your organization?</h5>
+          <input
+            type="text"
+            className="email"
+            placeholder="Organization Name"
+          />
+
+          <h5>What services are you looking for?</h5>
+          <input type="text" className="email" placeholder="Web Design, Web Development..." />
+
+          <h5>Your message</h5>
           <textarea
             name="message"
             className="msg"
             cols="30"
             rows="5"
-            placeholder="MSG"
+            placeholder="Message"
           ></textarea>
+
           <button type="submit" value="Send" className="submitBtn">
             Submit
           </button>

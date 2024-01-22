@@ -10,24 +10,20 @@
     margin: 0 auto;
 }
 
-.title{
-    font-size: 3rem;
-    font-weight: 600;
+.titleMain{
+    font-size: 300%;
     padding-top: 3rem;
-    margin-bottom: 1.5rem;
 }
 
-.description{
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 51rem;
-    padding: 0.2rem;
+.descript{
+    font-size: 80%;
+    max-width: 75%;
 }
 
 .skillBars{
     margin: 1.5rem;
     width: 100vw;
-    max-width: 80%;
+    max-width: 50%;
     text-align: left;
 }
 

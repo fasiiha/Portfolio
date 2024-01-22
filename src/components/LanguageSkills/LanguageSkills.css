@@ -1,7 +1,7 @@
 .language-skills{
     min-height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 60rem;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -15,10 +15,6 @@
     margin-bottom:1rem;
 }
 
-.description{
-    font-weight: 300;
-    font-size: 1rem;
-}
 
 .lanImages{
     margin: 1rem 0;
@@ -26,11 +22,25 @@
     flex-wrap: wrap;
 }
 
-.lanImg{
-    object-fit: cover;
-    width:23%;
-    min-width:9rem;
-    margin:auto;
-    padding:0.25rem;
-}
 
+
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .horizontal-scrolling-items {
+    display: flex;
+    /* font-size: 40px; */
+    width: 220%;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }

@@ -1,28 +1,27 @@
 import "./Home.css";
-import hireImg from "../../assets/hireMe.png";
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 
 function Home() {
   return (
     <>
       <section id="home">
         <div className="content">
-          <span className="hello">Hello,</span>
-          <span className="introText">
-            I{"'"}m <span className="introName">Fasiha Arshad</span> <br /> Website
-            Developer
-          </span>
-          <p className="details">
+          <span className="hello">Hello, I{"'"}m</span>
+          <span className="introName">Fasiha Arshad</span>
+          <span className="speciality">Freelance Designer & Developer</span>
+          <span className="details">
             I am proficient web developer with a solid understanding of
             front-end and back-end technologies, with expertise in data
             structures and algorithms, database management, and object-oriented
             programming and possesses a comprehensive understanding of related
             programming languages.
-          </p>
+          </span>
           <Link>
-            <button className="btn">
-              <img src={hireImg} alt="HireMeIMG" className="hireImg" />
-              Hire Me
+            <button className="btn btn-one">
+              <FontAwesomeIcon icon={faEnvelope} />
+              &nbsp; Get in touch
             </button>
           </Link>
         </div>
