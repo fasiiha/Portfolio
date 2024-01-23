@@ -1,9 +1,9 @@
-import "./Skills.css";
+import "./About.css";
 
-function Skills() {
+function About() {
   return (
     <>
-      <section id="skills">
+      <section id="about">
         <div className="about">
           <div className="aboutTitle">
             Crafting Digital Excellence: Your Vision, My Expertise in Website
@@ -23,13 +23,13 @@ function Skills() {
         <div className="services">
           <div className="leftside">
             <div className="titleMain">I can help you with...</div>
-            <span className="descript">
+            <div className="descriptMain">
               I am proficient web developer with a solid understanding of
               front-end and back-end technologies, with expertise in data
               structures and algorithms, database management, and
               object-oriented programming and possesses a comprehensive
               understanding of related programming languages.
-            </span>
+            </div>
           </div>
           <div className="rightside">
             <div className="skillBars">
@@ -64,4 +64,4 @@ function Skills() {
     </>
   );
 }
-export default Skills;
+export default About;

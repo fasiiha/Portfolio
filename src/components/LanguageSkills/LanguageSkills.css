@@ -1,46 +1,53 @@
-.language-skills{
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.language-skills {
+  /* min-height: calc(100vh - 4rem); */
+  width: 100vw;
+  max-width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
 }
 
-.title{
-    font-size:3rem;
-    margin-bottom:1rem;
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-
-.lanImages{
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
+.lanImages {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-
 
 @keyframes infiniteScroll {
-    from {transform: translateX(0)}
-    to {transform: translateX(-50%)}
+  from {
+    transform: translateX(0);
   }
-  .container {
-    width: 100%;
-    overflow-x: hidden;
+  to {
+    transform: translateX(-50%);
   }
-  .horizontal-scrolling-items {
-    display: flex;
-    /* font-size: 40px; */
-    width: 220%;
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .horizontal-scrolling-items__item {
-    white-space: nowrap;
-  }
+}
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.horizontal-scrolling-items {
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  border:1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  width: 240%;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}

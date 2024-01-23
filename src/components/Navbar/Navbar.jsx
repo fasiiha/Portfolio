@@ -36,23 +36,23 @@ function Navbar() {
         <div className="menu">
           <Link
             activeClass="active"
+            to="about"
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="menuListItem"
+          >
+            About
+          </Link>
+          <Link
+            activeClass="active"
             to="project"
             smooth={true}
             offset={-100}
             duration={500}
             className="menuListItem"
           >
-            Projects
-          </Link>
-          <Link
-            activeClass="active"
-            to="language-skills"
-            smooth={true}
-            offset={-100}
-            duration={500}
-            className="menuListItem"
-          >
-            Skills
+            Project
           </Link>
           <Link
             activeClass="active"

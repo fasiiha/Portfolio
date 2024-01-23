@@ -16,13 +16,13 @@
 }
 
 .contactForm {
-  margin: 1rem;
+  /* margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 90vw;
-  max-width: 60rem;
+  max-width: 60rem; */
 }
 
 .name,
@@ -32,7 +32,7 @@
   font-size: 80%;
   width: 100%;
   max-width: 40rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   padding: 0.5rem 2rem;
   color: white;
   border: 0.1rem solid rgb(255, 255,255, 0.1);
@@ -69,6 +69,8 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   opacity: 0.5;
+  margin-top: 2rem;
+
 }
 
 
@@ -81,7 +83,7 @@ h5 {
   font-size: 15px;
   line-height: 15px;
   padding: 1rem 1rem;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   text-decoration: none;
   cursor: pointer;
   background: #fff;
@@ -135,4 +137,28 @@ h5 {
   transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+.dividePart {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.leftSide{
+  width: 70%;
+}
+
+.rightSide{
+  width: 30%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 30vh; 
+  flex-direction: column;
 }

@@ -17,7 +17,7 @@ function Home() {
             programming and possesses a comprehensive understanding of related
             programming languages.
           </span>
-          <button className="btn" role="button">
+          <button className="btnH" role="button">
             <span className="text">
               <FontAwesomeIcon icon={faEnvelope} /> &nbsp; Get in touch
             </span>

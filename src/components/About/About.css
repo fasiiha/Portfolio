@@ -1,4 +1,4 @@
-#skills {
+#about {
   overflow: hidden;
   width: 100vw;
   max-width: 65rem;
@@ -6,6 +6,8 @@
   flex-direction: column;
   margin: 0 auto;
   margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .services {
   overflow: hidden;
@@ -14,6 +16,8 @@
   display: flex;
   flex-direction: row;
   margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .titleMain {
@@ -38,9 +42,11 @@
 }
 
 
-.descript {
+.descriptMain {
+  font-size: 70%;
+  line-height: 1.75;
   padding-top: 1%;
-  font-size: 80%;
+
 }
 
 .skillBars {

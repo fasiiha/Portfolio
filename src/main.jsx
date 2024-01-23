@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Home from './components/Home/Home.jsx'
-import Skills from './components/Skills/Skills.jsx'
+import About from './components/About/About.jsx'
 import Project from './components/Projects/Project.jsx'
 import LanguageSkills from './components/LanguageSkills/LanguageSkills.jsx'
 import Contact from './components/Contact/Contact.jsx'
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     <Navbar />
     <Home />
-    <Skills />
+    <About />
     <Project/>
     <LanguageSkills/>
     <Contact/>
