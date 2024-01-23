@@ -18,15 +18,16 @@ function Home() {
             programming and possesses a comprehensive understanding of related
             programming languages.
           </span>
-          <Link>
-            <button className="btn btn-one">
-              <FontAwesomeIcon icon={faEnvelope} />
-              &nbsp; Get in touch
-            </button>
-          </Link>
+          <button className="btn" role="button">
+            <span className="text">
+              <FontAwesomeIcon icon={faEnvelope} /> &nbsp; Get in touch
+            </span>
+            <span>Contact Me</span>
+          </button>
         </div>
       </section>
     </>
+
   );
 }
 export default Home;

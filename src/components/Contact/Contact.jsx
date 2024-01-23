@@ -66,8 +66,14 @@ function Contact() {
             placeholder="Message"
           ></textarea>
 
-          <button type="submit" value="Send" className="submitBtn">
+          {/* <button type="submit" value="Send" className="submitBtn">
             Submit
+          </button> */}
+          <button className="btn" role="button">
+            <span className="text">
+              Done
+            </span>
+            <span>Submit</span>
           </button>
           <div className="links">
             <img src={hireImg} alt="LinkImg" className="link" />
