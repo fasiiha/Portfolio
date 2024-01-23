@@ -1,5 +1,4 @@
 import "./Home.css";
-import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 

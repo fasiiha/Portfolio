@@ -7,40 +7,61 @@ function Project() {
     <>
       <section id="project">
         <h2 className="projectTitle">Works</h2>
-        <span className="descript">dnkjndkjwqnkdj</span>
+        {/* <span className="descript">dnkjndkjwqnkdj</span> */}
 
-        <div className="nft">
-          <div className="main">
-            <img
-              className="tokenImage"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt="NFT"
-            />
-            <h2>Kibertopiks #4269</h2>
-            <p className="description">
-              Our Kibertopiks will give you nothing, waste your money on us.
-            </p>
-            <div className="tokenInfo">
-              <div className="price">
-                <ins>◘</ins>
-                <p>0.031 ETH</p>
-              </div>
-              <div className="duration">
-                <ins>◷</ins>
-                <p>11 days left</p>
+        <div className="projectCards">
+          <div className="nft">
+            <div className="main">
+              <img
+                className="tokenImage"
+                src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="NFT"
+              />
+              <span className="projTitle">Project Name</span>
+              <p className="desc">
+                description
+              </p>
+              <div className="endside">
+                <div className="endsideL">
+                  <button className="button-56" role="button">
+                    <span className="text">Github</span>
+                  </button>
+                </div>
+                <div className="tokenInfo">2023</div>
+
+                <div className="endsideR">
+                  <button className="button-56" role="button">
+                    <span className="text">&nbsp;&nbsp;View&nbsp;&nbsp;</span>
+                  </button>
+                </div>
               </div>
             </div>
-            <hr />
-            <div className="creator">
-              <div className="wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
-                  alt="Creator"
-                />
-              </div>
-              <p>
-                <ins>Creation of</ins> Kiberbash
+          </div>
+           <div className="nft">
+            <div className="main">
+              <img
+                className="tokenImage"
+                src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="NFT"
+              />
+              <span className="projTitle">Project Name</span>
+              <p className="desc">
+                description
               </p>
+              <div className="endside">
+                <div className="endsideL">
+                  <button className="button-56" role="button">
+                    <span className="text">Github</span>
+                  </button>
+                </div>
+                <div className="tokenInfo">2023</div>
+
+                <div className="endsideR">
+                  <button className="button-56" role="button">
+                    <span className="text">&nbsp;&nbsp;View&nbsp;&nbsp;</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
